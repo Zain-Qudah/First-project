@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+
+.summary-card {
+    height: 100%;
+}
+
+
+.card {
+    border-radius: 10px;
+}
+
+
+.table {
+    background-color: white;
+}
+
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #212529;
+    color: white;
+}
+
+body.dark-mode .card {
+    background-color: #343a40;
+    color: white;
+}
+
+body.dark-mode .table {
+    color: white;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #343a40;
+    color: white;
+}
+/* Navbar in Dark Mode */
+
+body.dark-mode .navbar {
+    background-color: #495057 !important;
+}
+/*  css gridالجزء المسؤل عن ال*/
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+}
+/* Expense Chart */
+
+#expenseChart {
+    max-height: 250px;
+}
+.summary-card {
+    transition: 0.3s;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* Table Row Hover */
+
+.table tbody tr:hover > * {
+    background-color: #a3a1a1 !important;
+    transition: 0.2s;
+}
+
+/* Dark Mode */
+
+body.dark-mode .table tbody tr:hover > * {
+    background-color: #495057 !important;
+}
