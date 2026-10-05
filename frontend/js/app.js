@@ -462,27 +462,27 @@ function applyFilter() {
 // Start Edit
 // --------------------------------------------------
 
-function startEdit(expense) {
+// function startEdit(expense) {
 
-    document.getElementById("editExpenseId").value =
-        expense.id;
+//     document.getElementById("editExpenseId").value =
+//         expense.id;
 
-    document.getElementById("editTitle").value =
-        expense.title;
+//     document.getElementById("editTitle").value =
+//         expense.title;
 
-    document.getElementById("editAmount").value =
-        expense.amount;
+//     document.getElementById("editAmount").value =
+//         expense.amount;
 
-    document.getElementById("editCategory").value =
-        expense.category;
+//     document.getElementById("editCategory").value =
+//         expense.category;
 
-    document.getElementById("editDate").value =
-        expense.date;
+//     document.getElementById("editDate").value =
+//         expense.date;
 
-    const modal =new bootstrap.Modal(document.getElementById("editExpenseModal"));
-    modal.show();
+//     const modal =new bootstrap.Modal(document.getElementById("editExpenseModal"));
+//     modal.show();
 
-}
+// }
 
 
 // Start Edit
