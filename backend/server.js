@@ -266,10 +266,8 @@ app.put("/api/expenses/:id", async (req, res) => {
 
 
     // Validate title
-    if (
-        typeof title !== "string" ||
-        title.trim() === ""
-    ) {
+    if ( typeof title !== "string" ||
+         title.trim() === "") {
 
         return res.status(400).json({
             message: "Title is required"
