@@ -544,9 +544,11 @@ document.getElementById("expenseForm").addEventListener("submit",
 
         const result =await addExpense(data);
         if (result) {
-
+         
             document.getElementById("expenseForm").reset();
+
             await refresh();
+            
 
         }
 
@@ -578,6 +580,7 @@ async function handleDelete(id) {
 // --------------------------------------------------
 
 document.getElementById("categoryFilter").addEventListener("change",applyFilter);
+
 
 // Search event
 // --------------------------------------------------
